@@ -1,0 +1,193 @@
+/*==================================================
+	Sitewide Styles
+==================================================*/
+*{
+	color: #000;
+}
+
+/* Stock Body CSS */
+body {
+	background: none repeat scroll 0 0 #fff;
+    color: #222;
+    margin:0;
+}
+
+/* Blue Color and No text decoration with NO HOVER */
+a {	
+	color:#222;
+	text-decoration: none;
+}
+/*Hovering links should underline and change color.*/
+a:hover {
+	color: #222;
+	text-decoration: underline;
+}
+
+/* No decoration on text in button upon hover */
+a.button:hover {
+	text-decoration: none;
+}
+
+/*==================================================
+	Top Section - Navigation
+==================================================*/
+/*Puts top nav into top right corner with a small margin from right border*/
+.topNav {
+	float:right;
+	margin-right: 25px;
+}
+/* Makes sure topNav items are aligned and position properly with correct text size*/
+.topNav li{
+	list-style: none;
+	display: inline-block;
+	padding: 5px 10px 0 0;
+	vertical-align: bottom;
+	margin: 5px 5px 0 0;
+	font-size: 13px;
+}
+/* Aligns text links in topNav.  */
+.topNav li a {
+	position: relative;
+	top:-3px;
+}
+/*Controls size and shade of font awesome links in topNav */
+.fa {
+	font-size: 20px;
+	vertical-align: top;
+	opacity: 0.7;
+	cursor: default;
+}
+/* Hover makes font awesome not opaque and changes pointer*/
+.fa:hover {
+	opacity: 1.0;
+	cursor: pointer;
+
+}
+/*sharButton color and positioning tags*/
+.shareButton {
+	background-color: #f2f2f2;
+	padding:7px 15px;
+	cursor: default;
+	position: relative;
+    top: -3px;
+}
+/* Share button on botton is decorated when hovered*/
+.shareButton:hover {
+	background-color: #E1E1E1;
+	cursor: pointer;
+}
+/*shapes and properly sizes profile img in topNav*/
+.profileImg {
+	border-radius: 25px;
+	height: 32px;
+    width: 32px;
+    position: relative;
+    top: 7px;
+}
+
+/*==================================================
+	Middle Section - Search Box
+==================================================*/
+/*Makes search box stay in position, and width of screen*/
+.searchBox {
+	position: absolute;
+	margin-top:75px;
+	width:100%;
+}
+/*Pretty spacing on image for seachbox*/
+.searchBox img {
+	padding:142px 0 24px 0;
+	display: block;
+	margin:0 auto;
+}
+/*SearchBox properties. Border for more impact */
+.searchBox input {
+	width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+}
+/*CHanges color inside of input box when selected*/
+.searchBox input:focus {
+	border-color: #f5f5f5;
+}
+/*Centers text in searchButtons*/
+.searchButtons  {
+	text-align: center;
+	padding-left: 0;
+}
+/*styles search buttons around text.*/
+.searchButtons button{
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 27px;
+    margin: 17px 6px;
+    padding: 0 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+/*Properties when the buttons are hovered over*/
+.searchButtons button:hover{
+	background-color:#f8f8f8;
+	border: 1px solid #c6c6c6;
+    box-shadow:0 1px 1px rgba(0,0,0,0.1);
+    color:#333;
+} 
+
+/*==================================================
+	Bottom Section - Site Links
+==================================================*/
+/*Bottom links bar positioned indefinitely on bottom of page.*/
+.bottomLinks {
+	bottom: 0px !important;
+	position: absolute;
+	width:100%;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4; 
+}
+/*Made sure there were zero margins on both sides of bottom links*/
+.left, 
+.right {
+	margin: 0;
+}
+/*Aligned left links to the left while giving space between border and content*/
+.left {
+	float:left;
+	padding-left:20px;
+}
+/*aligned bottom right links to the right and game spacing between content and window edge*/
+.right {
+	float:right;
+	padding-right:10px;
+}
+/*makes sure all content in bottomLinks are inline with no list decorations. Also gives some height to the content*/
+.left li, 
+.right li {
+	list-style: none;
+	display: inline;
+	line-height: 40px;
+}
+/*select any elements with a class of right and find all li tags inside then the 1st anchor tags inside*/
+.right li a:first-child {
+	padding-right:8px;
+}
+/*Sspacing between the inline bottomLinks */
+.left li:nth-child(2), 
+.left li:nth-child(3) {
+	margin-left:7px;
+}
+/* Colors and gives custom letter spacing to all botton links*/
+.left li a,
+.right li a {
+	color: #666;
+    margin: 2px 10px 0;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+}
